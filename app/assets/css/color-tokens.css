@@ -1,0 +1,22 @@
+:root {
+
+   /* Backgrounds */
+   --color-background-neutral-default: #FFF;
+   --color-background-neutral-subtle: #e1e4e8;
+
+   /* Text */
+   --color-text-neutral-default: #2c2426;
+
+   /* Borders */
+   --color-border-neutral-default: #CCC;
+   --color-border-neutral-subtle: #DDD;
+
+   /* Buttons */
+   --color-button-background-primary: #D71921;
+   --color-button-text-primary: #FFF;
+
+
+   --color-button-background-secondary: #FFF;
+   --color-button-text-secondary: #2c2426;
+   --color-button-border-secondary: #CCC;
+}
