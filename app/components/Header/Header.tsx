@@ -7,7 +7,7 @@ export const Header = () => {
         <div className={"u-max-content-width"}>
           <div className={"header-inner"}>
             <div className={"logo"}>
-            <Link href={"/"}>Logo</Link>
+            <Link href={"/gym-note/public"}>Logo</Link>
             </div>
             <button className={"menu-toggle"}>Menu</button>
           </div>

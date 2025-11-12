@@ -1,6 +1,6 @@
 "use client";
-import {Header} from "@/app/components/Header";
-import {Button} from "@/app/components/Button";
+import {Header} from "@/app/components/Header/Header";
+import {Button} from "@/app/components/Button/Button";
 
 export default function Home() {
   return (
