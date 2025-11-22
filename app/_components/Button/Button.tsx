@@ -23,7 +23,7 @@ export const Button = ({children, variant = "secondary", ...rest }: ButtonProps)
             color: var(--color-button-text-secondary);
             
             &:hover {
-               background-color: var(--color-button-background-secondary-hover);
+               background-color: var(--color-button-background-secondary-hover); 
             }
          }
          

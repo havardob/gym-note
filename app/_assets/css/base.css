@@ -1,6 +1,6 @@
 body {
    color: var(--color-text-neutral-default);
-   background-color: var(--color-background-neutral-subtle);
+   background-color: var(--color-background-neutral-default);
    font-family: var(--ff-primary), sans-serif;
    min-height: 100dvh;
    line-height: 1.5;
