@@ -1,15 +1,15 @@
-import Link from "next/link";
+import Link from 'next/link';
 
 export const Header = () => {
   return (
     <>
-      <header className={"header"}>
-        <div className={"u-max-content-width"}>
-          <div className={"header-inner"}>
-            <div className={"logo"}>
-            <Link href={"/gym-note/public"}>Logo</Link>
+      <header className={'header'}>
+        <div className={'u-max-content-width'}>
+          <div className={'header-inner'}>
+            <div className={'logo'}>
+              <Link href={'/gym-note/public'}>Logo</Link>
             </div>
-            <button className={"menu-toggle"}>Menu</button>
+            <button className={'menu-toggle'}>Menu</button>
           </div>
         </div>
       </header>
@@ -43,5 +43,5 @@ export const Header = () => {
          }
       `}</style>
     </>
-  )
-}
+  );
+};

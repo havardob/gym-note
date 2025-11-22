@@ -1,5 +1,5 @@
-import {ChangeEvent, Fragment, useState} from "react";
-import {ClickOutsideHandler} from "@/app/_components/ClickOutside/ClickOutside";
+import { ChangeEvent, Fragment, useState } from 'react';
+import { ClickOutsideHandler } from '@/app/_components/ClickOutside/ClickOutside';
 
 interface CounterProps {
   initialValue?: number;
@@ -7,52 +7,52 @@ interface CounterProps {
   maxNumber?: number;
 }
 
-export const Counter = ({initialValue = 10, step = .5, maxNumber = 200}: CounterProps) => {
+export const Counter = ({ initialValue = 10, step = .5, maxNumber = 200 }: CounterProps) => {
   const [value, setValue] = useState(initialValue);
   const [pickerOpen, setPickerOpen] = useState(false);
 
   const handleIncrease = () => {
     setValue((current) => current + step);
-  }
+  };
 
   const handleDecrease = () => {
     setValue((current) => current !== 0 ? current - step : 0);
-  }
+  };
 
   const handleOnChange = (event: ChangeEvent<HTMLInputElement>) => {
     const inputValue = parseInt(event.target.value);
     if (!isNaN(inputValue)) {
       setValue(inputValue);
     } else {
-      alert("Must be a number");
+      alert('Must be a number');
     }
-  }
+  };
 
-  const picker = Array.from({length: maxNumber / step}, (_, i) => (i + 1) * step);
+  const picker = Array.from({ length: maxNumber / step }, (_, i) => (i + 1) * step);
 
   const handlePick = (pickedValue: number) => {
     setValue(pickedValue);
     setPickerOpen(false);
-  }
+  };
 
   return (
     <>
-      <div className={"counter"}>
-        <button className={"counter-button"} onClick={handleDecrease}>-</button>
-        <input className={"counter-input"} type={"text"} value={value?.toFixed(2)} onChange={handleOnChange} readOnly={true} onClick={() => setPickerOpen(true)} />
-        <button className={"counter-button"} onClick={handleIncrease}>+</button>
+      <div className={'counter'}>
+        <button className={'counter-button'} onClick={handleDecrease}>-</button>
+        <input className={'counter-input'} type={'text'} value={value?.toFixed(2)} onChange={handleOnChange} readOnly={true} onClick={() => setPickerOpen(true)} />
+        <button className={'counter-button'} onClick={handleIncrease}>+</button>
         <ClickOutsideHandler onClick={() => setPickerOpen(false)}>
-          <div className={"counter-picker"} data-open={pickerOpen}>
-                  <h2>0</h2>
+          <div className={'counter-picker'} data-open={pickerOpen}>
+            <h2>0</h2>
             {picker.map((count) => {
               return (
-              <Fragment key={`pick_${count}`}>
-                {count % 10 === 0 && (
-                  <h2>{count}</h2>
-                )}
-                <button onClick={() => handlePick(count)}>{count.toFixed(2)}</button>
-              </Fragment>
-              )
+                <Fragment key={`pick_${count}`}>
+                  {count % 10 === 0 && (
+                    <h2>{count}</h2>
+                  )}
+                  <button onClick={() => handlePick(count)}>{count.toFixed(2)}</button>
+                </Fragment>
+              );
             })}
           </div>
         </ClickOutsideHandler>
@@ -132,5 +132,5 @@ export const Counter = ({initialValue = 10, step = .5, maxNumber = 200}: Counter
 
       `}</style>
     </>
-  )
-}
+  );
+};

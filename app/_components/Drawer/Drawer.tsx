@@ -1,6 +1,6 @@
-import {ReactNode} from "react";
-import {ClickOutsideHandler} from "@/app/_components/ClickOutside/ClickOutside";
-import {Icon} from "@/app/_components/Icon/Icon";
+import { ReactNode } from 'react';
+import { ClickOutsideHandler } from '@/app/_components/ClickOutside/ClickOutside';
+import { Icon } from '@/app/_components/Icon/Icon';
 
 interface DrawerProps {
   title?: string;
@@ -9,26 +9,26 @@ interface DrawerProps {
   children?: ReactNode;
 }
 
-export const Drawer = ({title, open = false, onClose, children}: DrawerProps) => {
+export const Drawer = ({ title, open = false, onClose, children }: DrawerProps) => {
   const handleOnClose = () => {
-    onClose?.()
-  }
+    onClose?.();
+  };
 
   return (
     <>
-      <div className={"drawer"} data-open={open}>
+      <div className={'drawer'} data-open={open}>
         <ClickOutsideHandler onClick={handleOnClose}>
-          <div className={"drawer__inner"} data-open={open}>
-            <div className={"drawer__header"}>
+          <div className={'drawer__inner'} data-open={open}>
+            <div className={'drawer__header'}>
               {title && (
-                <div className={"drawer__title"}>{title}</div>
+                <div className={'drawer__title'}>{title}</div>
               )}
               <button className="drawer__close" onClick={handleOnClose}>
-                <Icon icon={"close"} />
-                <span className={"u-visually-hidden"}>Close</span>
+                <Icon icon={'close'} />
+                <span className={'u-visually-hidden'}>Close</span>
               </button>
             </div>
-            <div className={"drawer__content"}>
+            <div className={'drawer__content'}>
               {children}
             </div>
           </div>
@@ -100,5 +100,5 @@ export const Drawer = ({title, open = false, onClose, children}: DrawerProps) =>
          }
       `}</style>
     </>
-  )
-}
+  );
+};

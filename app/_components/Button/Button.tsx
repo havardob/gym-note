@@ -1,14 +1,14 @@
-import {ButtonHTMLAttributes, ReactNode} from "react";
+import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
-  variant?: "primary" | "secondary";
+  variant?: 'primary' | 'secondary';
 }
 
-export const Button = ({children, variant = "secondary", ...rest }: ButtonProps) => {
+export const Button = ({ children, variant = 'secondary', ...rest }: ButtonProps) => {
   return (
     <>
-      <button className={"button"} data-variant={variant} {...rest}>
+      <button className={'button'} data-variant={variant} {...rest}>
         <span>{children}</span>
       </button>
 
@@ -38,5 +38,5 @@ export const Button = ({children, variant = "secondary", ...rest }: ButtonProps)
          }
       `}</style>
     </>
-  )
-}
+  );
+};

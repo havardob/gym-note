@@ -1,4 +1,4 @@
-import { ReactNode, useEffect, useRef } from "react";
+import { ReactNode, useEffect, useRef } from 'react';
 
 interface ClickOutsideProps {
   onClick: () => void;
@@ -15,9 +15,9 @@ export const ClickOutsideHandler = ({ onClick, children }: ClickOutsideProps) =>
       }
     };
 
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener('mousedown', handleClickOutside);
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener('mousedown', handleClickOutside);
     };
   }, [onClick]);
 
