@@ -2,4 +2,5 @@
    --ff-primary: var(--font-geist);
    --ff-secondary: "Stack Sans Headline";
    --ff-fancy: "Stack Sans Notch";
+   --ff-mono: var(--font-geist-mono);
 }

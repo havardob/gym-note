@@ -1,8 +1,10 @@
 "use client";
 
-import {Button} from "@/app/components/Button/Button";
-import {Drawer} from "@/app/components/Drawer/Drawer";
 import {useState} from "react";
+import {Button} from "@/app/_components/Button/Button";
+import {Drawer} from "@/app/_components/Drawer/Drawer";
+import {Icon} from "@/app/_components/Icon/Icon";
+import {Counter} from "@/app/_components/Counter/Counter";
 
 export default function Page() {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -21,6 +23,19 @@ export default function Page() {
           <Drawer open={drawerOpen} onClose={() => setDrawerOpen(false)} title={"Drawer"}>
             <p>Hello</p>
           </Drawer>
+        </section>
+        <section className={"component"}>
+          <div style={{display: "flex", "flexWrap": "wrap", gap: "1rem", fontSize: "1.5rem"}}>
+          <Icon icon={"abs"} />
+          <Icon icon={"arm"} />
+          <Icon icon={"back"} />
+          <Icon icon={"chest"} />
+          <Icon icon={"shoulders"} />
+          <Icon icon={"legs"} />
+          </div>
+        </section>
+        <section className={"component"}>
+          <Counter />
         </section>
       </div>
     </div>

@@ -1,0 +1,13 @@
+export type IconType =
+  | "abs"
+  | "arm"
+  | "arrow-left"
+  | "arrow-right"
+  | "back"
+  | "chest"
+  | "chevron-up"
+  | "chevron-down"
+  | "close"
+  | "legs"
+  | "menu"
+  | "shoulders"
