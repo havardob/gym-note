@@ -1,42 +1,16 @@
 import { ButtonHTMLAttributes, ReactNode } from 'react';
+import "./Button.css";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: 'primary' | 'secondary';
+  shape?: 'square' | 'pill';
 }
 
-export const Button = ({ children, variant = 'secondary', ...rest }: ButtonProps) => {
+export const Button = ({ children, variant = 'secondary', shape = "square", ...rest }: ButtonProps) => {
   return (
-    <>
-      <button className={'button'} data-variant={variant} {...rest}>
-        <span>{children}</span>
-      </button>
-
-      <style jsx>{`
-         .button {
-            display: inline-flex;
-            align-items: center;
-            padding: .5em 1em;
-            border-radius: .25rem;
-            border: 1px solid var(--color-button-border-secondary);
-            background-color: var(--color-button-background-secondary);
-            color: var(--color-button-text-secondary);
-            
-            &:hover {
-               background-color: var(--color-button-background-secondary-hover); 
-            }
-         }
-         
-         .button[data-variant='primary'] {
-            border: none;
-            background-color: var(--color-button-background-primary);
-            color: var(--color-button-text-primary);
-            
-            &:hover {
-               background-color: var(--color-button-background-primary-hover);
-            }
-         }
-      `}</style>
-    </>
+    <button className={'button'} data-variant={variant} data-shape={shape} {...rest}>
+      <span>{children}</span>
+    </button>
   );
 };

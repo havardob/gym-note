@@ -1,0 +1,57 @@
+.workout-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: .5rem;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    background-color: var(--color-gray-400);
+}
+
+.workout-item__content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+    row-gap: .25rem;
+}
+
+.workout-item__title {
+    font-size: 1.125rem;
+    font-weight: 400;
+    color: var(--color-text-neutral-default);
+}
+
+.workout-item__details {
+    display: flex;
+    column-gap: .75rem;
+    row-gap: .25rem;
+    flex-wrap: wrap;
+}
+
+.workout-item__detail {
+    color: var(--color-text-neutral-subtle);
+    font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+    column-gap: .125rem;
+
+    svg {
+        flex-shrink: 0;
+        font-size: .875rem;
+    }
+
+    &[data-variant="success"] {
+        color: var(--color-green-500);
+
+        svg {
+            color: var(--color-green-600);
+        }
+    }
+}
+
+.workout-item__date {
+    font-size: .875rem;
+    color: var(--color-text-neutral-subtle);
+    line-height: 1;
+    flex-shrink: 0;
+}

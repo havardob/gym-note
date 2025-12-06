@@ -1,0 +1,51 @@
+.exercise-item {
+    display: flex;
+    align-items: center;
+    column-gap: .75rem;
+    padding-inline: 1rem;
+    padding-block: .75rem;
+    background-color: var(--color-gray-400);
+}
+
+.exercise-item__icon {
+    font-size: 1.5rem;
+    background-color: var(--color-white-6);
+    border-radius: .25rem;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    position: relative;
+
+    &[data-variant="success"] {
+        outline: .0625rem solid var(--color-green-500);
+    }
+}
+
+.exercise-item__icon-indicator {
+    background-color: var(--color-gray-400);
+    position: absolute;
+    font-size: 1rem;
+    border-radius: 50%;
+    color: var(--color-green-500);
+    top: -.5rem;
+    right: -.5rem;
+    display: grid;
+    place-items: center;
+}
+
+.exercise-item__content {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.25;
+}
+
+.exercise-item__title {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--color-text-neutral-default);
+}
+
+.exercise-item__badge {
+    font-size: .875rem;
+}

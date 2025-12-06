@@ -1,6 +1,6 @@
 :root {
     /* Font Family */
-    --ff-primary: var(--font-geist);
+    --ff-primary: var(--font-gabarito);
     --ff-secondary: "Stack Sans Headline";
     --ff-fancy: "Stack Sans Notch";
     --ff-mono: var(--font-geist-mono);

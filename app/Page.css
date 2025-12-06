@@ -1,0 +1,16 @@
+.l-frontpage {
+    margin-block-start: 2rem;
+}
+
+.l-frontpage__empty {
+    margin-block-start: 10vh;
+}
+
+.l-frontpage__workouts {
+    margin-block-start: 1rem;
+    padding-block-end: 3rem;
+}
+
+.l-frontpage__heading {
+    font-size: 1.5rem;
+}

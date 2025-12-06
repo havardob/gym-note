@@ -1,0 +1,1 @@
+export type StatusType = "default" | "info" | "success" | "warning" | "danger";

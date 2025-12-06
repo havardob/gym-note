@@ -58,8 +58,8 @@
    --color-gray-500: #1a1c23;
    --color-gray-400: #22242c;
    --color-gray-300: #292b33;
-   --color-gray-100: #d5d7dd;
-   --color-gray-50: #ebecef;
+   --color-gray-200: #d5d7dd;
+   --color-gray-100: #ebecef;
    
    /* Blue */
    --color-blue-800: #003f7a;
@@ -77,19 +77,19 @@
 
    /* Text */
    --color-text-neutral-default: var(--color-white-100);
+   --color-text-neutral-subtle: var(--color-white-84);
 
    /* Borders */
-   --color-border-neutral-default: #CCC;
-   --color-border-neutral-subtle: #DDD;
+   --color-border-neutral-default: #CCCCCC;
+   --color-border-neutral-subtle: var(--color-white-12);
 
    /* Buttons */
-   --color-button-background-primary: #D71921;
-   --color-button-background-primary-hover: #a01218;
-   --color-button-text-primary: #FFF;
+   --color-button-background-primary: var(--color-blue-500);
+   --color-button-background-primary-hover: var(--color-blue-600);
+   --color-button-text-primary: var(--color-white-100);
 
 
-   --color-button-background-secondary: var(--color-white-6);
-   --color-button-background-secondary-hover: var(--color-white-12);
+   --color-button-background-secondary: var(--color-white-12);
+   --color-button-background-secondary-hover: var(--color-white-6);
    --color-button-text-secondary: var(--color-white-100);
-   --color-button-border-secondary: var(--color-white-12);
 }

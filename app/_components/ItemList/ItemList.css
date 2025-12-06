@@ -1,0 +1,19 @@
+.item-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: .5rem;
+}
+
+.item-list__title {
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--color-text-neutral-subtle);
+    line-height: 1.25;
+    padding-inline: 1rem;
+}
+
+.item-list__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: .125rem;
+}

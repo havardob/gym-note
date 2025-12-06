@@ -28,12 +28,10 @@ const eslintConfig = defineConfig([
       'react/jsx-indent-props': ['error', 2],
       
       // Other style/consistency rules (optional but recommended)
-      'quotes': ['error', 'single'],
       'semi': ['error', 'always'],
       'object-curly-spacing': ['error', 'always'],
       'array-bracket-spacing': ['error', 'never'],
-      'no-unused-vars': ['warn'],
-      'linebreak-style': ['error', 'windows'],
+      'no-unused-vars': ['warn']
     },
   }
 ]);

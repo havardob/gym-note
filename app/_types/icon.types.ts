@@ -1,10 +1,12 @@
 export type IconType =
   | 'abs'
   | 'arm'
+  | 'arrow-wide-down'
   | 'arrow-left'
   | 'arrow-right'
   | 'back'
   | 'chest'
+  | 'check-circle'
   | 'chevron-up'
   | 'chevron-down'
   | 'close'

@@ -1,0 +1,27 @@
+.button {
+    display: inline-flex;
+    align-items: center;
+    padding-block: .75em;
+    padding-inline: 2em;
+    font-size: 1.125rem;
+    border-radius: .25rem;
+    background-color: var(--color-button-background-secondary);
+    color: var(--color-button-text-secondary);
+
+    &:hover {
+        background-color: var(--color-button-background-secondary-hover);
+    }
+
+    &[data-variant='primary'] {
+        background-color: var(--color-button-background-primary);
+        color: var(--color-button-text-primary);
+
+        &:hover {
+            background-color: var(--color-button-background-primary-hover);
+        }
+    }
+
+    &[data-shape="pill"] {
+        border-radius: 99em;
+    }
+}

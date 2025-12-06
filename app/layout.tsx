@@ -6,11 +6,12 @@ import './_assets/css/color-tokens.css';
 import './_assets/css/font-tokens.css';
 import './_assets/css/base.css';
 import './_assets/css/utils.css';
-import { Geist, Geist_Mono } from 'next/font/google';
+import "./Layout.css";
+import { Geist_Mono, Gabarito } from 'next/font/google';
 
-const geist = Geist({
+const gabarito = Gabarito({
   subsets: ['latin'],
-  variable: '--font-geist',
+  variable: '--font-gabarito',
   display: 'swap',
 });
 
@@ -32,9 +33,11 @@ export default function RootLayout({
   children: ReactNode; 
 }>) {
   return (
-    <html lang="en" className={`${geist.variable} ${geistMono.variable}`}>
+    <html lang="en" className={`${gabarito.variable} ${geistMono.variable}`}>
       <body>
-        {children}
+        <div className={"l-app"}>
+          {children}
+        </div>
       </body>
     </html>
   );

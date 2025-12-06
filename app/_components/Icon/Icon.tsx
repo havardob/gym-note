@@ -142,12 +142,21 @@ const Shoulders = () => <svg width="1em" viewBox="0 0 24 24" xmlns="http://www.w
   />
 </svg>;
 
+const ChevronUp = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width={"1em"}><path d="M11.9999 10.8284L7.0502 15.7782L5.63599 14.364L11.9999 8L18.3639 14.364L16.9497 15.7782L11.9999 10.8284Z"></path></svg>;
+
+const CheckCircle = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" fill="currentColor"><path d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22ZM17.4571 9.45711L11 15.9142L6.79289 11.7071L8.20711 10.2929L11 13.0858L16.0429 8.04289L17.4571 9.45711Z"></path></svg>;
+
+const ArrowWideDown = () => <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" fill="currentColor"><path d="M12 15.6315L20.9679 10.8838L20.0321 9.11619L12 13.3685L3.9679 9.11619L3.03212 10.8838L12 15.6315Z"></path></svg>;
+
 export const Icon = ({ icon }: IconProps) => {
   let renderIcon: ReactNode;
 
   switch (icon) {
     case 'close':
       renderIcon = <Close />;
+      break;
+    case 'arrow-wide-down':
+      renderIcon = <ArrowWideDown />;
       break;
     case 'abs':
       renderIcon = <Abs />;
@@ -166,6 +175,12 @@ export const Icon = ({ icon }: IconProps) => {
       break;
     case 'shoulders':
       renderIcon = <Shoulders />;
+      break;
+    case 'chevron-up':
+      renderIcon = <ChevronUp />;
+      break;
+    case 'check-circle':
+      renderIcon = <CheckCircle />;
       break;
     default:
       renderIcon = <span>ℹ️</span>;

@@ -1,0 +1,23 @@
+.badge {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    line-height: 1;
+}
+
+.badge__indicator {
+    display: inline-block;
+    width: .25rem;
+    aspect-ratio: 1;
+    border-radius: 50%;
+
+    &[data-variant="info"] {
+        background-color: var(--color-blue-500);
+    }
+}
+
+.badge__label {
+    &[data-variant="info"] {
+        color: var(--color-blue-200);
+    }
+}
